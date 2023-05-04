@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: SegoeUI-SemiBold-final, Segoe UI Semibold, sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+main #taskList {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+main #doneTaskList {
+    display: flex;
+    flex-direction: column;
+}
+
+main .task {
+    width: 100%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0.3px 0.9px rgba(0, 0, 0, 10%), 0px 1.6px 3.6px rgba(0, 0, 0, 10%);
+    margin-bottom: 20px;
+}
+
+main .task.hidden {
+    display: none;
+}
+
+main .task#addTask #options {
+    height: 55px;
+    padding: 0 15px;
+    margin-top: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .task .taskName {
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+main .task .taskName .leftElement {
+    margin-right: 10px;
+}
+
+main .task #addTaskInput {
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+main .task #addTaskInput:focus {
+    outline: none;
+}
+
+main #doneTaskList .task .taskName {
+    text-decoration: line-through;
+}
+
+.form-check-input {
+    margin: 6px;
+}
+
+input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+}
+
+input[type="checkbox"]:checked:before {
+    content: "";
+    display: block;
+    width: 17px;
+    height: 17px;
+    /* background-color: rgb(255, 165, 0); */
+    background-image: url('checkmark.png');
+    background-size: contain;
+}
